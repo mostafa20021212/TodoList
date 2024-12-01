@@ -5,10 +5,10 @@ export default function TodoInput({ handleAddTodos, value, setValue }) {
     handleAddTodos(value);
     setValue("");
   };
-  const a = () => {};
   return (
     <herder>
       <input
+        className="todoInput"
         type="text"
         placeholder="Enter todo..."
         value={value}
@@ -16,7 +16,9 @@ export default function TodoInput({ handleAddTodos, value, setValue }) {
           setValue(e.target.value);
         }}
       />
-      <button onClick={() => value && addTodos()}>Add</button>
+      <button className="todobutton" onClick={() => value && addTodos()}>
+        Add
+      </button>
     </herder>
   );
 }
