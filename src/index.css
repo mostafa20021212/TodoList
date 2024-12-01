@@ -42,24 +42,24 @@ header input {
   outline: none;
   width: 100%;
 }
-
-header button {
-  border-radius: 14px;
-  background: transparent;
-  transition-duration: 200ms;
-  cursor: pointer;
-}
-
-header button:hover {
-  opacity: 0.7;
-}
-
-header button,
-header input {
+.todoInput,
+.todobutton {
   padding: 14px 18px;
   border: none;
   outline: none;
   background: white;
+}
+
+.todobutton {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+  background-color: rgb(156, 138, 138);
+}
+
+.todobutton:hover {
+  opacity: 0.7;
 }
 
 p {
@@ -101,7 +101,6 @@ p {
 .actionsContainer button:hover {
   opacity: 0.7;
 }
-
 @media (min-width: 640px) {
   header button,
   header input {
